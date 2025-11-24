@@ -25,3 +25,12 @@ html_theme = 'furo'
 html_static_path = ['_static']
 
 todo_include_todos = True
+
+# LaTeX settings for Thai PDF output
+latex_engine = 'lualatex'
+latex_use_xindy = False
+latex_elements = {
+    'babel': '\\usepackage[thai]{babel}',
+    'fontpkg': '\\setmainfont{TH Sarabun New}',
+    'preamble': '\\babelprovide[import, main]{thai}',
+}
